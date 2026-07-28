@@ -52,7 +52,7 @@ function TeamCard({ member }: { member: TeamMember }) {
           onClick={() => setShowBio(false)}
         >
           <div
-            className="relative max-w-lg w-full rounded-xl bg-card p-6 shadow-xl animate-in fade-in-0 zoom-in-95 duration-200"
+            className="relative max-w-lg w-full rounded-xl bg-white p-6 shadow-xl animate-in fade-in-0 zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -88,7 +88,7 @@ function TeamCard({ member }: { member: TeamMember }) {
               </div>
             </div>
 
-            <p className="mt-4 text-sm leading-relaxed text-foreground">
+            <p className="mt-4 text-sm leading-relaxed text-gray-800">
               {member.bio}
             </p>
 
@@ -121,7 +121,7 @@ export function TeamSection({ content }: TeamSectionProps) {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 grid-cols-2 md:grid-cols-3">
+        <div className="mt-14 mx-auto max-w-3xl grid gap-6 grid-cols-2 md:grid-cols-3">
           {content.members.map((member) => (
             <TeamCard key={member.name} member={member} />
           ))}
