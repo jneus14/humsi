@@ -232,6 +232,15 @@ export function getDefaultContent(): SiteContent {
         },
 
         {
+          name: "Ashwin Prabu",
+          role: "Data & Research Specialist",
+          initials: "AP",
+          photo: "/images/team/ashwin.jpg",
+          photoPosition: "object-[center_20%]",
+          link: "",
+          bio: "Ashwin Prabu is a postgraduate fellow at the European Center for Not-for-Profit Law, where he works at the intersection of AI governance and human rights. He has experience in immigrant advocacy through a legal internship at Innovation Law Lab, where he managed immigration legal logistics and supported clients at Portland's asylum welcome center. His honors thesis, \"Freedom or Control? Expanding a Relational Understanding of ICE's Alternatives to Detention Program,\" investigates how surveillance technology is used by immigration enforcement, drawing on semi-structured interviews with former ICE agents and ethnographic fieldwork at the San Francisco ICE field office and immigration court. Ashwin has presented his findings to leading immigrant's rights organizations to inform their advocacy. His thesis was awarded Stanford's Firestone Medal for Excellence in Undergraduate Research and has recently been cited by The Guardian. Ashwin graduated from Stanford University with a bachelor's degree in Data Science and Social Systems, a minor in Comparative Studies in Race and Ethnicity (CSRE), interdisciplinary honors in CSRE, university distinction, and membership in Phi Beta Kappa. He is currently based in Washington, D.C.",
+        },
+        {
           name: "Marlena Wisniak",
           role: "Board of Directors",
           initials: "MW",

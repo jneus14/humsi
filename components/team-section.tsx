@@ -121,7 +121,7 @@ export function TeamSection({ content }: TeamSectionProps) {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-14 grid gap-6 grid-cols-2 md:grid-cols-3">
           {content.members.map((member) => (
             <TeamCard key={member.name} member={member} />
           ))}
