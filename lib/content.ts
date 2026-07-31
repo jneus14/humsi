@@ -267,6 +267,15 @@ export function getDefaultContent(): SiteContent {
           link: "",
           bio: "Sara Kostanteen is a management consultant and strategic operator with over a decade of experience advising Fortune 500 companies and high-growth brands on GTM strategy, AI transformation, and organizational design. Born and raised in Egypt, Sara immigrated to the United States and earned a merit-based scholarship to Yale School of Management, where she received her MBA. Beyond her professional work, Sara has served as a Special Advocate with San Francisco CASA, championing foster youth in the court system. She is passionate about using her platform and skills to support communities navigating systems that were not built with them in mind.",
         },
+        {
+          name: "Lindsey Andersen",
+          role: "Board of Directors",
+          initials: "LA",
+          photo: "/images/team/lindsey.jpg",
+          photoPosition: "object-[center_20%]",
+          link: "",
+          bio: "Lindsey Andersen advises companies on the responsible development and deployment of technology as a Director at BSR. She has a background in international human rights, with a focus on digital rights and digital security, and previously worked on these issues at Internews and Access Now. Lindsey has a Masters in public policy from Princeton University.",
+        },
       ],
     },
     contact: {
