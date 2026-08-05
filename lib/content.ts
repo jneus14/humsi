@@ -282,7 +282,7 @@ export function getDefaultContent(): SiteContent {
       title: "Get in Touch",
       subtitle:
         "Interested in partnering with us or learning more about our work? We'd love to hear from you.",
-      email: "julia@humsi.org",
+      email: "info@humsi.org",
       linkedin: "https://www.linkedin.com/company/humansecurityinitiative/",
     },
   };
