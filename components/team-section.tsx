@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { FileText, X } from "lucide-react"
+import { FileText, Mail, X } from "lucide-react"
 import type { TeamContent, TeamMember } from "@/lib/content"
 import Link from "next/link"
 import Image from "next/image"
@@ -92,14 +92,27 @@ function TeamCard({ member }: { member: TeamMember }) {
               {member.bio}
             </p>
 
-            {member.publicationsLink && (
-              <Link
-                href={member.publicationsLink}
-                className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
-              >
-                <FileText className="h-4 w-4" />
-                Publications
-              </Link>
+            {(member.email || member.publicationsLink) && (
+              <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
+                {member.email && (
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                  >
+                    <Mail className="h-4 w-4" />
+                    {member.email}
+                  </a>
+                )}
+                {member.publicationsLink && (
+                  <Link
+                    href={member.publicationsLink}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-primary/80"
+                  >
+                    <FileText className="h-4 w-4" />
+                    Publications
+                  </Link>
+                )}
+              </div>
             )}
           </div>
         </div>

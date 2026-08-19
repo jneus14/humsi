@@ -44,6 +44,7 @@ export interface TeamMember {
   photoPosition?: string;
   link: string;
   bio: string;
+  email?: string;
   publicationsLink?: string;
 }
 
@@ -219,6 +220,7 @@ export function getDefaultContent(): SiteContent {
           photoPosition: "object-[center_20%]",
           link: "",
           bio: "Julia Neusner is a lawyer and researcher focusing on migration and human rights. She has worked as an attorney with the International Refugee Assistance Project, the Stanford Migration and Asylum Lab, and Human Rights First. Her work includes extensive field research at the U.S.-Mexico border examining the impact of U.S. policies and the intersection of climate change with human mobility. Julia received her JD and MA in International Policy from Stanford University.",
+          email: "julia@humsi.org",
           publicationsLink: "/team/julia-neusner/publications",
         },
         {
@@ -229,6 +231,7 @@ export function getDefaultContent(): SiteContent {
           photoPosition: "object-[center_15%] scale-125",
           link: "",
           bio: "Anna MacLennan is a Research and Advocacy Specialist. A Harvard graduate with a Bachelor's in Government and a focus on Data Science, she has previously worked in policy and communications supporting pro-refugee advocacy at both the Refugee Advocacy Lab and the International Refugee Assistance Project. Anna also has significant firsthand experience supporting refugees, including three months providing humanitarian aid to women and children on the move at the France-UK border crisis in Calais, France. More recently, she volunteered with No More Deaths providing desert aid near the US-Mexico border in southern Arizona. Anna has also interned at the U.S. Committee for Refugees and Immigrants providing case management support to refugees and asylees in North Carolina. At Harvard, Anna was deeply involved in outreach work with Boston's Chinatown immigrant communities and was awarded Harvard's top prize for undergraduate research for her senior thesis about anti-immigrant misinformation. Anna is from Cincinnati, OH, with additional roots in Vancouver, Canada.",
+          email: "anna@humsi.org",
         },
 
         {
@@ -239,6 +242,7 @@ export function getDefaultContent(): SiteContent {
           photoPosition: "object-[center_20%]",
           link: "",
           bio: "Ashwin Prabu is a postgraduate fellow at the European Center for Not-for-Profit Law, where he works at the intersection of AI governance and human rights. He has experience in immigrant advocacy through a legal internship at Innovation Law Lab, where he managed immigration legal logistics and supported clients at Portland's asylum welcome center. His honors thesis, \"Freedom or Control? Expanding a Relational Understanding of ICE's Alternatives to Detention Program,\" investigates how surveillance technology is used by immigration enforcement, drawing on semi-structured interviews with former ICE agents and ethnographic fieldwork at the San Francisco ICE field office and immigration court. Ashwin has presented his findings to leading immigrant's rights organizations to inform their advocacy. His thesis was awarded Stanford's Firestone Medal for Excellence in Undergraduate Research and has recently been cited by The Guardian. Ashwin graduated from Stanford University with a bachelor's degree in Data Science and Social Systems, a minor in Comparative Studies in Race and Ethnicity (CSRE), interdisciplinary honors in CSRE, university distinction, and membership in Phi Beta Kappa. He is currently based in Washington, D.C.",
+          email: "ashwin@humsi.org",
         },
         {
           name: "Marlena Wisniak",
