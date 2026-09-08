@@ -16,7 +16,7 @@ export function SiteFooter() {
           </div>
           <p className="max-w-xs text-sm text-muted-foreground">
             Human Security Initiative is a 501(c)(3) nonprofit organization
-            incorporated in California.
+            incorporated in California. EIN: 39-4604790
           </p>
         </div>
         <nav className="flex gap-6">
