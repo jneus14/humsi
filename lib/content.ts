@@ -118,7 +118,7 @@ export function getDefaultContent(): SiteContent {
         {
           title: "Research",
           description:
-            "Conducting rigorous field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-driven displacement, documentation of conditions along migration routes, and interviews with deportees in Mexico.",
+            "Conducting field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-driven displacement, documentation of conditions along migration routes, and interviews with deportees in Mexico.",
         },
         {
           title: "Advocacy",
