@@ -290,7 +290,7 @@ export function getDefaultContent(): SiteContent {
       subtitle:
         "Interested in partnering with us or learning more about our work? We'd love to hear from you.",
       email: "info@humsi.org",
-      linkedin: "https://www.linkedin.com/company/humansecurityinitiative/",
+      linkedin: "https://www.linkedin.com/company/humsiorg",
       x: "https://x.com/humsiorg",
       instagram: "https://www.instagram.com/humsi_org/",
       bluesky: "https://bsky.app/profile/humsi.bsky.social",
