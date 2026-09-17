@@ -59,6 +59,9 @@ export interface ContactContent {
   subtitle: string;
   email: string;
   linkedin: string;
+  x: string;
+  instagram: string;
+  bluesky: string;
 }
 
 export interface SiteContent {
@@ -288,6 +291,9 @@ export function getDefaultContent(): SiteContent {
         "Interested in partnering with us or learning more about our work? We'd love to hear from you.",
       email: "info@humsi.org",
       linkedin: "https://www.linkedin.com/company/humansecurityinitiative/",
+      x: "https://x.com/humsiorg",
+      instagram: "https://www.instagram.com/humsi_org/",
+      bluesky: "https://bsky.app/profile/humsi.bsky.social",
     },
   };
 }
