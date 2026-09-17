@@ -53,22 +53,6 @@ export function ContactSection({ content }: ContactSectionProps) {
             </div>
           </a>
 
-          <a
-            href="https://secure.givelively.org/donate/human-security-initiative"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-6 transition-all hover:border-primary/30 hover:shadow-sm"
-          >
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-              <Heart className="h-6 w-6 text-primary" />
-            </div>
-            <div className="text-left">
-              <p className="text-sm font-semibold text-card-foreground">
-                Donate
-              </p>
-              <p className="text-sm text-muted-foreground">Support our work</p>
-            </div>
-          </a>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-4">
@@ -94,6 +78,23 @@ export function ContactSection({ content }: ContactSectionProps) {
               </a>
             ))}
           </div>
+
+          <a
+            href="https://secure.givelively.org/donate/human-security-initiative"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-6 transition-all hover:border-primary/30 hover:shadow-sm"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+              <Heart className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-card-foreground">
+                Donate
+              </p>
+              <p className="text-sm text-muted-foreground">Support our work</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
