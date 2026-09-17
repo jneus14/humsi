@@ -113,22 +113,22 @@ export function getDefaultContent(): SiteContent {
       title: "Our Mission",
       subtitle: "Research, Advocacy, Education",
       description:
-        "The Human Security Initiative is a 501(c)(3) nonprofit organization dedicated to promoting safety and dignity for all people through three interconnected approaches.",
+        "The Human Security Initiative is a 501(c)(3) nonprofit organization dedicated to promoting safety and dignity for all people. We conduct field research alongside affected communities, document human rights harms, and turn that evidence into advocacy and education for justice and accountability worldwide.",
       pillars: [
         {
           title: "Research",
           description:
-            "Conducting rigorous research and analysis on human rights and global justice issues to inform policy and practice.",
+            "Conducting rigorous field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-driven displacement, documentation of conditions along migration routes, and interviews with deportees in Mexico.",
         },
         {
           title: "Advocacy",
           description:
-            "Working with communities, policymakers, and institutions to advance protections for vulnerable people.",
+            "Turning evidence into accountability. Through the Human Impact Project, we preserve thousands of documented accounts of harm from immigration enforcement, and we work with communities, policymakers, and institutions to advance protections for vulnerable people.",
         },
         {
           title: "Education",
           description:
-            "Developing educational materials and trainings on global justice issues and advocacy.",
+            "Developing practice guides, trainings, and legal education for advocates, practitioners, and universities. HUMSI lectures on climate and migration at U.S. universities and leads a legal education partnership with the University of Rwanda.",
         },
       ],
     },

@@ -54,23 +54,6 @@ export function ContactSection({ content }: ContactSectionProps) {
           </a>
 
           <a
-            href={content.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-6 transition-all hover:border-primary/30 hover:shadow-sm"
-          >
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
-              <Linkedin className="h-6 w-6 text-primary" />
-            </div>
-            <div className="text-left">
-              <p className="text-sm font-semibold text-card-foreground">
-                LinkedIn
-              </p>
-              <p className="text-sm text-muted-foreground">Human Security Initiative</p>
-            </div>
-          </a>
-
-          <a
             href="https://secure.givelively.org/donate/human-security-initiative"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,6 +77,7 @@ export function ContactSection({ content }: ContactSectionProps) {
           </p>
           <div className="flex items-center gap-4">
             {[
+              { name: "LinkedIn", url: content.linkedin, Icon: Linkedin },
               { name: "X", url: content.x, Icon: XIcon },
               { name: "Instagram", url: content.instagram, Icon: Instagram },
               { name: "Bluesky", url: content.bluesky, Icon: BlueskyIcon },
