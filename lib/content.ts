@@ -162,32 +162,6 @@ export function getDefaultContent(): SiteContent {
           publications: [],
         },
         {
-          id: "mobility",
-          title: "Cross-Border Mobility & Migration",
-          description:
-            "HUMSI conducts research examining conditions faced by displaced people along migration routes in the Americas. Our work includes documenting violence, environmental impacts, and other challenges along migration routes to support advocacy for safe and legal migration pathways. HUMSI led field research and a coalition report on challenges faced by individuals crossing the Darién Gap connecting Colombia and Panama.",
-          details: [],
-          partners: [
-            "Immigrant Defenders Advocacy Center",
-            "Quixote Center",
-            "Las Americas Immigrant Advocacy Center",
-            "Witness at the Border",
-            "American Immigration Council",
-            "Red Franciscana Para Migrantes",
-          ],
-          publications: [
-            {
-              title: "Danger in the Darién Gap Report",
-              url: "https://quixote.org/danger-in-the-darien-gap-human-rights-abuses-and-the-need-for-humane-pathways-to-safety",
-              featured: true,
-            },
-            {
-              title: "Deadly Journeys: Climate Change, U.S. Border Enforcement, and Human Rights",
-              url: "https://scholarlycommons.law.case.edu/jil/vol56/iss1/16/",
-            },
-          ],
-        },
-        {
           id: "climate",
           title: "Climate, Environment & Displacement",
           description:
@@ -212,6 +186,32 @@ export function getDefaultContent(): SiteContent {
             {
               title: "Practice Guide on U.S. Refugee Protection Claims Related to Climate Change",
               url: "https://refugeerights.org/news-resources/practice-guide-climate",
+            },
+          ],
+        },
+        {
+          id: "mobility",
+          title: "Cross-Border Mobility & Migration",
+          description:
+            "HUMSI conducts research examining conditions faced by displaced people along migration routes in the Americas. Our work includes documenting violence, environmental impacts, and other challenges along migration routes to support advocacy for safe and legal migration pathways. HUMSI led field research and a coalition report on challenges faced by individuals crossing the Darién Gap connecting Colombia and Panama.",
+          details: [],
+          partners: [
+            "Immigrant Defenders Advocacy Center",
+            "Quixote Center",
+            "Las Americas Immigrant Advocacy Center",
+            "Witness at the Border",
+            "American Immigration Council",
+            "Red Franciscana Para Migrantes",
+          ],
+          publications: [
+            {
+              title: "Danger in the Darién Gap Report",
+              url: "https://quixote.org/danger-in-the-darien-gap-human-rights-abuses-and-the-need-for-humane-pathways-to-safety",
+              featured: true,
+            },
+            {
+              title: "Deadly Journeys: Climate Change, U.S. Border Enforcement, and Human Rights",
+              url: "https://scholarlycommons.law.case.edu/jil/vol56/iss1/16/",
             },
           ],
         },
