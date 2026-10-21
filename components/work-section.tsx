@@ -14,9 +14,9 @@ const projectImages: Record<string, { src: string; alt: string; position?: strin
     src: "/images/research.jpg",
     alt: "Migrants walking along a path through a village in the Darien Gap region, carrying backpacks on their journey through Central America",
   },
-  irap: {
+  health: {
     src: "/images/mobility.jpg",
-    alt: "Migrants gathered at a humanitarian aid station, representing IRAP's climate program work",
+    alt: "Migrants gathered at a humanitarian aid station, representing field research on the health impacts of detention and deportation",
   },
   legal: {
     src: "/images/institution.jpg",
@@ -27,6 +27,62 @@ const projectImages: Record<string, { src: string; alt: string; position?: strin
     alt: "People walking in line at a U.S.-Mexico border crossing, depicting immigration enforcement operations",
     position: "object-[center_35%]",
   },
+}
+
+function FeaturedProject({ project }: { project: WorkProject }) {
+  const image = projectImages[project.id] || { src: "/images/work-climate.jpg", alt: project.title }
+
+  return (
+    <div className="mt-12 overflow-hidden rounded-2xl border border-accent/30 bg-card md:flex">
+      <div className="relative md:w-1/2">
+        <img
+          src={image.src}
+          alt={image.alt}
+          className={`h-64 w-full object-cover md:h-full ${image.position || "object-center"}`}
+        />
+      </div>
+      <div className="p-8 md:w-1/2 md:p-10">
+        <p className="text-xs font-semibold uppercase tracking-[0.15em] text-accent">
+          Featured Project
+        </p>
+        <h3 className="mt-3 text-2xl font-extrabold tracking-tight text-card-foreground md:text-3xl">
+          {project.title}
+        </h3>
+        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
+          {project.description}
+        </p>
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground/80">
+          <span className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+            More than 5,000 incidents documented
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+            Original testimony from interviews with deportees
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+            Updated daily in English and Spanish
+          </span>
+          <span className="flex items-center gap-2">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+            Searchable by harm type, person impacted, and location
+          </span>
+        </div>
+        {project.externalLink && (
+          <a
+            href={project.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3.5 text-base font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Explore the Database
+            <ExternalLink className="h-5 w-5" />
+          </a>
+        )}
+      </div>
+    </div>
+  )
 }
 
 function ProjectCard({ project }: { project: WorkProject }) {
@@ -43,7 +99,7 @@ function ProjectCard({ project }: { project: WorkProject }) {
         />
       </div>
       <div className="p-6 md:p-8">
-        <h3 className="font-serif text-xl font-bold text-card-foreground md:text-2xl">
+        <h3 className="text-xl font-bold tracking-tight text-card-foreground md:text-2xl">
           {project.title}
         </h3>
         
@@ -142,16 +198,20 @@ interface WorkSectionProps {
 }
 
 export function WorkSection({ content }: WorkSectionProps) {
-  // Renders all projects from content including Human Impact Project
+  const featured = content.projects.find((p) => p.id === "human-impact")
+  const rest = content.projects.filter((p) => p.id !== "human-impact")
+
   return (
     <section id="work" className="bg-secondary py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="font-serif text-4xl font-bold text-foreground md:text-5xl lg:text-6xl text-balance">
+        <h2 className="text-4xl font-extrabold tracking-tight text-foreground md:text-5xl lg:text-6xl text-balance">
           Our Work
         </h2>
 
+        {featured && <FeaturedProject project={featured} />}
+
         <div className="mt-12 grid gap-8 md:grid-cols-2">
-          {content.projects.map((project) => (
+          {rest.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

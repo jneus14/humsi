@@ -35,7 +35,7 @@ function TeamCard({ member }: { member: TeamMember }) {
               </span>
             </div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
             <h3 className="text-lg font-semibold text-primary-foreground">
               {member.name}
@@ -48,11 +48,11 @@ function TeamCard({ member }: { member: TeamMember }) {
       {/* Bio Modal Overlay */}
       {showBio && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-foreground/60 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-4"
           onClick={() => setShowBio(false)}
         >
           <div
-            className="relative max-w-lg w-full rounded-xl bg-white p-6 shadow-xl animate-in fade-in-0 zoom-in-95 duration-200"
+            className="relative max-w-lg w-full rounded-xl border border-border bg-popover p-6 shadow-xl animate-in fade-in-0 zoom-in-95 duration-200"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -88,7 +88,7 @@ function TeamCard({ member }: { member: TeamMember }) {
               </div>
             </div>
 
-            <p className="mt-4 text-sm leading-relaxed text-gray-800">
+            <p className="mt-4 text-sm leading-relaxed text-foreground/85">
               {member.bio}
             </p>
 
@@ -129,7 +129,7 @@ export function TeamSection({ content }: TeamSectionProps) {
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.15em] text-primary">
             {content.title}
           </p>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
+          <h2 className="text-3xl font-extrabold tracking-tight text-foreground md:text-4xl text-balance">
             {content.subtitle}
           </h2>
         </div>

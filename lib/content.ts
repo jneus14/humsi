@@ -4,6 +4,7 @@ export interface HeroContent {
   tagline: string;
   title: string;
   subtitle: string;
+  highlight?: string;
   ctaText: string;
   ctaLink: string;
 }
@@ -106,6 +107,8 @@ export function getDefaultContent(): SiteContent {
       title: "Safety and dignity for all",
       subtitle:
         "HUMSI leads research, advocacy, and education to protect human rights and promote security for vulnerable people.",
+      highlight:
+        "We're documenting more than 5,000 stories of people impacted by U.S. immigration enforcement.",
       ctaText: "Learn About Our Work",
       ctaLink: "#work",
     },
@@ -118,7 +121,7 @@ export function getDefaultContent(): SiteContent {
         {
           title: "Research",
           description:
-            "Conducting field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-driven displacement, documentation of conditions along migration routes, and interviews with deportees in Mexico.",
+            "Conducting field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-driven displacement, documentation of conditions along migration routes, and interviews with deportees in Mexico whose testimony is preserved in the Human Impact Project.",
         },
         {
           title: "Advocacy",
@@ -140,39 +143,23 @@ export function getDefaultContent(): SiteContent {
           id: "human-impact",
           title: "Human Impact Project",
           description:
-            "The Human Impact Project is a living database that tracks, organizes, and archives stories of harm from U.S. immigration enforcement. The site preserves accounts of deportations, detentions, officer misconduct, family separations, and other impacts and sorts stories by incident type and person impacted. History has shown that documentation is essential for justice and accountability. This tool preserves evidence and facilitates a comprehensive understanding of harm.",
+            "The Human Impact Project is a bilingual, daily-updated database documenting more than 5,000 U.S. immigration enforcement incidents and the human stories behind them. The database centralizes incidents from hundreds of news sources, federal court records, government oversight reporting, and community accounts, and supplements the public record with never-before-told testimony from HUMSI's own on-the-ground interviews with people deported from the United States. Every incident appears on an interactive map and can be searched by type of harm, who was affected, and where enforcement took place, and every source is archived so the historical record survives even if the original reporting disappears. History has shown that documentation is the foundation of accountability. The Human Impact Project is an affiliated project of CodeX, the Stanford Center for Legal Informatics.",
           details: [],
           partners: [],
           publications: [],
           externalLink: "https://hiproject.org",
         },
         {
-          id: "climate",
-          title: "Climate, Environment & Displacement",
+          id: "health",
+          title: "Health Impacts of Detention & Deportation",
           description:
-            "HUMSI conducts field research at the U.S.-Mexico border examining the intersection of environmental conditions with other root causes of displacement. Our work includes consultation for IRAP's Climate program, development of practice guides for climate-related asylum claims, and legal frameworks to protect climate-displaced populations.",
+            "HUMSI is leading a research project on the health impacts of detention and deportation with Physicians for Human Rights and Las Americas Immigrant Advocacy Center, including 2026 field research with deportees in southern Mexico. The report will be published in early 2027.",
           details: [],
           partners: [
-            "International Refugee Assistance Project (IRAP)",
-            "Stanford Law School",
-            "U.S. Committee for Refugees and Immigrants",
+            "Physicians for Human Rights",
             "Las Americas Immigrant Advocacy Center",
           ],
-          publications: [
-            {
-              title: "Climate of Coercion: Environmental and Other Drivers of Cross-Border Displacement",
-              url: "https://refugeerights.org/news-resources/climate-of-coercion-environmental-and-other-drivers-of-cross-border-displacement-in-central-america-and-mexico",
-              featured: true,
-            },
-            {
-              title: "Danger by Design: How Climate Injustice Harms Displaced People at the U.S.-Mexico Border",
-              url: "https://refugeerights.org/news-resources/danger-by-design-how-climate-injustice-harms-displaced-people-at-the-u-s-mexico-border",
-            },
-            {
-              title: "Practice Guide on U.S. Refugee Protection Claims Related to Climate Change",
-              url: "https://refugeerights.org/news-resources/practice-guide-climate",
-            },
-          ],
+          publications: [],
         },
         {
           id: "mobility",
@@ -197,6 +184,34 @@ export function getDefaultContent(): SiteContent {
             {
               title: "Deadly Journeys: Climate Change, U.S. Border Enforcement, and Human Rights",
               url: "https://scholarlycommons.law.case.edu/jil/vol56/iss1/16/",
+            },
+          ],
+        },
+        {
+          id: "climate",
+          title: "Climate, Environment & Displacement",
+          description:
+            "HUMSI designed and led the Climate of Coercion research project, a groundbreaking investigation drawing on field research with displaced people at the U.S.-Mexico border to examine the intersection of climate impacts with other drivers of displacement. The project set the foundation for further research in this field. Our ongoing work includes consultation for IRAP's Climate program, development of practice guides for climate-related asylum claims, and legal frameworks to protect climate-displaced populations.",
+          details: [],
+          partners: [
+            "International Refugee Assistance Project (IRAP)",
+            "Stanford Law School",
+            "U.S. Committee for Refugees and Immigrants",
+            "Las Americas Immigrant Advocacy Center",
+          ],
+          publications: [
+            {
+              title: "Climate of Coercion: Environmental and Other Drivers of Cross-Border Displacement",
+              url: "https://refugeerights.org/news-resources/climate-of-coercion-environmental-and-other-drivers-of-cross-border-displacement-in-central-america-and-mexico",
+              featured: true,
+            },
+            {
+              title: "Danger by Design: How Climate Injustice Harms Displaced People at the U.S.-Mexico Border",
+              url: "https://refugeerights.org/news-resources/danger-by-design-how-climate-injustice-harms-displaced-people-at-the-u-s-mexico-border",
+            },
+            {
+              title: "Practice Guide on U.S. Refugee Protection Claims Related to Climate Change",
+              url: "https://refugeerights.org/news-resources/practice-guide-climate",
             },
           ],
         },

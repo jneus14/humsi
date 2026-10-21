@@ -15,7 +15,7 @@ export function MissionSection({ content }: MissionSectionProps) {
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.15em] text-primary">
             {content.title}
           </p>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
+          <h2 className="text-3xl font-extrabold tracking-tight text-foreground md:text-4xl text-balance">
             {content.subtitle}
           </h2>
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -31,12 +31,14 @@ export function MissionSection({ content }: MissionSectionProps) {
                 key={pillar.title}
                 className="group p-6"
               >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-md bg-muted">
-                  <Icon className="h-5 w-5 text-muted-foreground" />
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-muted">
+                    <Icon className="h-5 w-5 text-muted-foreground" />
+                  </div>
+                  <h3 className="text-base font-semibold text-foreground">
+                    {pillar.title}
+                  </h3>
                 </div>
-                <h3 className="mb-2 text-base font-medium text-foreground">
-                  {pillar.title}
-                </h3>
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {pillar.description}
                 </p>

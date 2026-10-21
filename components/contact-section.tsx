@@ -29,7 +29,7 @@ export function ContactSection({ content }: ContactSectionProps) {
           <p className="mb-3 text-sm font-medium uppercase tracking-[0.15em] text-primary">
             Contact
           </p>
-          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
+          <h2 className="text-3xl font-extrabold tracking-tight text-foreground md:text-4xl text-balance">
             {content.title}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
