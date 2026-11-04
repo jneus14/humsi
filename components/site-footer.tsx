@@ -20,6 +20,9 @@ export function SiteFooter() {
             <br />
             <span className="whitespace-nowrap">EIN: 39-4604790</span>
           </p>
+          <address className="max-w-xs text-sm not-italic text-muted-foreground">
+            Mailing address: PO Box 33, Oakland, CA 94612
+          </address>
         </div>
         <nav className="flex gap-6">
           <a
