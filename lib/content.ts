@@ -59,6 +59,7 @@ export interface ContactContent {
   title: string;
   subtitle: string;
   email: string;
+  mailingAddress: string[];
   linkedin: string;
   x: string;
   instagram: string;
@@ -305,6 +306,7 @@ export function getDefaultContent(): SiteContent {
       subtitle:
         "Interested in partnering with us or learning more about our work? We'd love to hear from you.",
       email: "info@humsi.org",
+      mailingAddress: ["PO Box 33", "Oakland, CA 94612"],
       linkedin: "https://www.linkedin.com/company/humsiorg",
       x: "https://x.com/humsiorg",
       instagram: "https://www.instagram.com/humsi_org/",

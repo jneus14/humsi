@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Heart, Instagram } from "lucide-react"
+import { Mail, Linkedin, Heart, Instagram, Mailbox } from "lucide-react"
 import type { ContactContent } from "@/lib/content"
 
 function XIcon({ className }: { className?: string }) {
@@ -37,7 +37,7 @@ export function ContactSection({ content }: ContactSectionProps) {
           </p>
         </div>
 
-        <div className="mt-14 flex flex-col items-center gap-8 md:flex-row md:justify-center">
+        <div className="mt-14 flex flex-col items-center gap-8 md:flex-row md:items-stretch md:justify-center">
           <a
             href={`mailto:${content.email}`}
             className="flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-6 transition-all hover:border-primary/30 hover:shadow-sm"
@@ -53,6 +53,23 @@ export function ContactSection({ content }: ContactSectionProps) {
             </div>
           </a>
 
+          <div className="flex items-center gap-4 rounded-xl border border-border bg-card px-8 py-6">
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+              <Mailbox className="h-6 w-6 text-primary" />
+            </div>
+            <div className="text-left">
+              <p className="text-sm font-semibold text-card-foreground">
+                Mailing Address
+              </p>
+              <address className="text-sm not-italic text-muted-foreground">
+                {content.mailingAddress.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </address>
+            </div>
+          </div>
         </div>
 
         <div className="mt-12 flex flex-col items-center gap-4">
