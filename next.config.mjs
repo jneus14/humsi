@@ -11,10 +11,15 @@ const nextConfig = {
   // Visitors stay on humsi.org; these two rules pass the requests through.
   async rewrites() {
     const map = "https://web-production-e0b797cb.up.railway.app"
-    return [
-      { source: "/uscd", destination: `${map}/uscd` },
-      { source: "/uscd/:path*", destination: `${map}/uscd/:path*` },
-    ]
+    // beforeFiles: these run before this site's own routing, so the map's
+    // background page requests (sent when a visitor clicks a link inside the
+    // map) are passed through too instead of being answered here with a 404.
+    return {
+      beforeFiles: [
+        { source: "/uscd", destination: `${map}/uscd` },
+        { source: "/uscd/:path*", destination: `${map}/uscd/:path*` },
+      ],
+    }
   },
 }
 
