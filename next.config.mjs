@@ -6,6 +6,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // humsi.org/uscd is the U.S. Climate-Related Displacement map, a separate
+  // app on Railway (project "uscd") that serves all its pages under /uscd.
+  // Visitors stay on humsi.org; these two rules pass the requests through.
+  async rewrites() {
+    const map = "https://web-production-e0b797cb.up.railway.app"
+    return [
+      { source: "/uscd", destination: `${map}/uscd` },
+      { source: "/uscd/:path*", destination: `${map}/uscd/:path*` },
+    ]
+  },
 }
 
 export default nextConfig
