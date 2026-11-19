@@ -37,16 +37,16 @@ const otherWork = [
 
 const principles = [
   {
-    title: "We center the people affected.",
-    text: "Every story leads with the person and what happened to them, and never defines anyone by a criminal record or uses dehumanizing labels.",
+    title: "We start from what people tell us.",
+    text: "Our research is grounded in the firsthand accounts of people affected by enforcement and displacement. We never define anyone by a criminal record or use dehumanizing labels.",
   },
   {
     title: "We protect the people who share their stories.",
-    text: "Interview records are held offline and encrypted, and the people we interview appear under pseudonyms.",
+    text: "We seek informed consent, keep interview records secure, and publish their accounts under pseudonyms.",
   },
   {
-    title: "We stay with the facts.",
-    text: "Every story cites its sources, and our summaries state what happened without editorial conclusions. HUMSI is nonpartisan.",
+    title: "We state what the evidence shows.",
+    text: "Our work rests on documented sources and firsthand accounts, and we report facts plainly. HUMSI is nonpartisan.",
   },
   {
     title: "We work in partnership",
