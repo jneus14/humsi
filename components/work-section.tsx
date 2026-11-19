@@ -54,11 +54,11 @@ function FeaturedProject({ project }: { project: WorkProject }) {
         <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-foreground/80">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            More than 5,000 incidents documented
+            More than 7,000 incidents documented
           </span>
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Original testimony from interviews with deportees
+            Original testimony from interviews with people deported to Mexico
           </span>
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />

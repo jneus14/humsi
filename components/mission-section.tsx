@@ -1,4 +1,5 @@
-import { BookOpen, Globe, Scale } from "lucide-react"
+import Link from "next/link"
+import { ArrowRight, BookOpen, Globe, Scale } from "lucide-react"
 import type { MissionContent } from "@/lib/content"
 
 const icons = [BookOpen, Globe, Scale]
@@ -21,6 +22,13 @@ export function MissionSection({ content }: MissionSectionProps) {
           <p className="mt-6 text-base leading-relaxed text-muted-foreground md:text-lg">
             {content.description}
           </p>
+          <Link
+            href="/mission"
+            className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+          >
+            Read our full mission statement
+            <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">

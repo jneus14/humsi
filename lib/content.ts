@@ -109,7 +109,7 @@ export function getDefaultContent(): SiteContent {
       subtitle:
         "HUMSI leads research, advocacy, and education to protect human rights and promote security for vulnerable people.",
       highlight:
-        "We're documenting more than 5,000 stories of people impacted by U.S. immigration enforcement.",
+        "We're documenting more than 7,000 stories of people impacted by U.S. immigration enforcement.",
       ctaText: "Learn About Our Work",
       ctaLink: "#work",
     },
@@ -117,17 +117,17 @@ export function getDefaultContent(): SiteContent {
       title: "Our Mission",
       subtitle: "Research, Advocacy, Education",
       description:
-        "The Human Security Initiative is a 501(c)(3) nonprofit organization dedicated to promoting safety and dignity for all people. We conduct field research alongside affected communities, document human rights harms, and turn that evidence into advocacy and education for justice and accountability worldwide.",
+        "The Human Security Initiative (HUMSI) is a 501(c)(3) nonprofit organization that works for the safety and dignity of all people. Human security means freedom from fear, freedom from want and the freedom to live in dignity. HUMSI works for these freedoms for people who are often left unprotected, including migrants and asylum seekers, people detained or deported, and people forced from their homes by violence, persecution or disaster. We research and document the harm they face, in their own words wherever we can, and use that evidence in advocacy, legal work and education for protection and accountability.",
       pillars: [
         {
           title: "Research",
           description:
-            "Conducting field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-driven displacement, documentation of conditions along migration routes, and interviews with deportees in Mexico whose testimony is preserved in the Human Impact Project.",
+            "Conducting field research and analysis on human rights and global justice issues, grounded in the firsthand experiences of affected people. Recent work includes studies of climate-related displacement, documentation of conditions along migration routes, and interviews with 84 people deported to southern Mexico, whose stories are published in the Human Impact Project.",
         },
         {
           title: "Advocacy",
           description:
-            "Turning evidence into accountability. Through the Human Impact Project, we preserve thousands of documented accounts of harm from immigration enforcement, and we work with communities, policymakers, and institutions to advance protections for vulnerable people.",
+            "Through the Human Impact Project, we keep a public record of more than 7,000 reported incidents of harm from U.S. immigration enforcement, and we share that evidence with lawyers, advocates, journalists, policymakers and United Nations human rights experts to advance protections for vulnerable people.",
         },
         {
           title: "Education",
@@ -144,7 +144,7 @@ export function getDefaultContent(): SiteContent {
           id: "human-impact",
           title: "Human Impact Project",
           description:
-            "The Human Impact Project is a bilingual, daily-updated database documenting more than 5,000 U.S. immigration enforcement incidents and the human stories behind them. The database centralizes incidents from hundreds of news sources, federal court records, government oversight reporting, and community accounts, and supplements the public record with never-before-told testimony from HUMSI's own on-the-ground interviews with people deported from the United States. Every incident appears on an interactive map and can be searched by type of harm, who was affected, and where enforcement took place, and every source is archived so the historical record survives even if the original reporting disappears. History has shown that documentation is the foundation of accountability. The Human Impact Project is an affiliated project of CodeX, the Stanford Center for Legal Informatics.",
+            "The Human Impact Project is a public record of what U.S. immigration enforcement has done to people. The database holds more than 7,000 reported incidents, including deaths in custody, arrests of U.S. citizens, raids on homes and workplaces, medical neglect in detention, and deportations to countries people had never lived in. Stories are drawn from news reporting, federal court records, government oversight reports, community accounts, family fundraisers and social media, and the database adds testimony from HUMSI's own interviews with people deported from the United States. A person reviews every story before it is published, and every source is archived so the record survives if the original reporting disappears. Its analysis pages show the practices that recur across stories, profile detention facilities, follow more than 1,200 habeas cases through the federal courts, and connect government actions and court rulings to the people they reached. The Human Impact Project is an affiliated project of CodeX, the Stanford Center for Legal Informatics.",
           details: [],
           partners: [],
           publications: [],
@@ -154,7 +154,7 @@ export function getDefaultContent(): SiteContent {
           id: "health",
           title: "Health Impacts of Detention & Deportation",
           description:
-            "HUMSI is leading a research project on the health impacts of detention and deportation with Physicians for Human Rights and Las Americas Immigrant Advocacy Center, including 2026 field research with deportees in southern Mexico. The report will be published in early 2027.",
+            "HUMSI is leading a research project on the health impacts of detention and deportation with Physicians for Human Rights and Las Americas Immigrant Advocacy Center, including interviews in September 2026 with 84 people deported to southern Mexico. The report will be published in early 2027.",
           details: [],
           partners: [
             "Physicians for Human Rights",
@@ -280,15 +280,6 @@ export function getDefaultContent(): SiteContent {
           photoPosition: "object-[center_20%]",
           link: "",
           bio: "Elizabeth Evans is an experienced litigator admitted to the New York Bar with a background in nonprofit fundraising. She served as Counsel at O'Melveny & Myers LLP and previously clerked for a U.S. District Judge. Elizabeth also served as Senior Development Coordinator at the American Museum of Natural History. She earned her J.D. from Fordham University School of Law.",
-        },
-        {
-          name: "Sara Kostanteen",
-          role: "Board of Directors",
-          initials: "SK",
-          photo: "/images/sara-kostanteen.jpeg",
-          photoPosition: "object-[center_20%]",
-          link: "",
-          bio: "Sara Kostanteen is a management consultant and strategic operator with over a decade of experience advising Fortune 500 companies and high-growth brands on GTM strategy, AI transformation, and organizational design. Born and raised in Egypt, Sara immigrated to the United States and earned a merit-based scholarship to Yale School of Management, where she received her MBA. Beyond her professional work, Sara has served as a Special Advocate with San Francisco CASA, championing foster youth in the court system. She is passionate about using her platform and skills to support communities navigating systems that were not built with them in mind.",
         },
         {
           name: "Lindsey Andersen",
