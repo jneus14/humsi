@@ -166,7 +166,7 @@ export function getDefaultContent(): SiteContent {
           id: "climate",
           title: "Climate, Environment & Displacement",
           description:
-            "HUMSI designed and led the Climate of Coercion research project, a groundbreaking investigation drawing on field research with displaced people at the U.S.-Mexico border to examine the intersection of climate impacts with other drivers of displacement. The project set the foundation for further research in this field. Our ongoing work includes consultation for IRAP's Climate program, development of practice guides for climate-related asylum claims, and legal frameworks to protect climate-displaced populations.",
+            "HUMSI built the U.S. Climate-Related Displacement map, its newest project. Using the Human Impact Project's methods, it gathers reports of people in the United States forced from their homes by wildfires, hurricanes, floods and other climate-related disasters, and shows each story on a map by disaster and place, with its sources archived. HUMSI has also produced field research and resources for advocates and policymakers on climate change, displacement and the protection of people forced to move.",
           details: [],
           partners: [
             "International Refugee Assistance Project (IRAP)",
@@ -189,6 +189,7 @@ export function getDefaultContent(): SiteContent {
               url: "https://refugeerights.org/news-resources/practice-guide-climate",
             },
           ],
+          externalLink: "https://www.humsi.org/uscd",
         },
         {
           id: "mobility",
