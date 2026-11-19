@@ -42,7 +42,7 @@ const principles = [
   },
   {
     title: "We protect the people who share their stories.",
-    text: "We seek informed consent, keep interview records secure, and publish their accounts under pseudonyms.",
+    text: "We seek informed consent, keep interview records secure, and publish a person's name or photo only with their permission.",
   },
   {
     title: "We state what the evidence shows.",
