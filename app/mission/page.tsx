@@ -23,7 +23,7 @@ const hip = [
 const otherWork = [
   {
     title: "Climate and displacement",
-    text: "HUMSI designed and led Climate of Coercion, field research with displaced people at the U.S.-Mexico border on how climate impacts combine with violence, poverty and other causes of displacement. We develop practice guides for asylum claims related to climate change and consult for the International Refugee Assistance Project's climate program. Using the Human Impact Project's methods, HUMSI is now building a map of people in the United States displaced by wildfires, hurricanes, floods and other climate-related disasters.",
+    text: "HUMSI built the U.S. Climate-Related Displacement map (humsi.org/uscd), which uses the Human Impact Project's methods to record the stories of people in the United States displaced by wildfires, hurricanes, floods and other climate-related disasters. HUMSI has also produced research and resources for advocates and policymakers on climate change, displacement and the protection of people forced to move.",
   },
   {
     title: "Migration routes",
