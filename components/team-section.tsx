@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { FileText, Mail, X } from "lucide-react"
 import type { TeamContent, TeamMember } from "@/lib/content"
-import { listedBoardMembers } from "@/lib/board"
+import { boardCardTitles, listedBoardMembers } from "@/lib/board"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -13,6 +13,8 @@ interface TeamSectionProps {
 
 function TeamCard({ member }: { member: TeamMember }) {
   const [showBio, setShowBio] = useState(false)
+  // A board member's card shows their job title (lib/board.ts), not "Board of Directors".
+  const subtitle = boardCardTitles[member.name] ?? member.role
 
   return (
     <div className="group relative">
@@ -41,7 +43,7 @@ function TeamCard({ member }: { member: TeamMember }) {
             <h3 className="text-lg font-semibold text-primary-foreground">
               {member.name}
             </h3>
-            <p className="text-sm text-primary-foreground/80">{member.role}</p>
+            <p className="text-sm text-primary-foreground/80">{subtitle}</p>
           </div>
         </div>
       </button>
@@ -85,7 +87,7 @@ function TeamCard({ member }: { member: TeamMember }) {
                 <h3 className="text-xl font-semibold text-foreground">
                   {member.name}
                 </h3>
-                <p className="text-sm text-muted-foreground">{member.role}</p>
+                <p className="text-sm text-muted-foreground">{subtitle}</p>
               </div>
             </div>
 
@@ -124,7 +126,8 @@ function TeamCard({ member }: { member: TeamMember }) {
 
 // A team member whose role says "Board" belongs under the Board of Directors
 // heading; everyone else is staff and comes first (Julia, Nov 19 2026).
-const onBoard = (member: TeamMember) => /board/i.test(member.role)
+const onBoard = (member: TeamMember) =>
+  member.name in boardCardTitles || /board/i.test(member.role)
 
 export function TeamSection({ content }: TeamSectionProps) {
   const staff = content.members.filter((member) => !onBoard(member))
