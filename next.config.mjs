@@ -9,6 +9,12 @@ const nextConfig = {
   // humsi.org/uscd is the U.S. Climate-Related Displacement map, a separate
   // app on Railway (project "uscd") that serves all its pages under /uscd.
   // Visitors stay on humsi.org; these two rules pass the requests through.
+  // humsi.org/cdadmin is the short address for the climate map's review queue
+  // (Julia, Nov 19 2026). It sends the browser to /uscd/admin, which the
+  // rules below pass to the map's own app; that app asks for the password.
+  async redirects() {
+    return [{ source: "/cdadmin", destination: "/uscd/admin", permanent: false }]
+  },
   async rewrites() {
     const map = "https://web-production-e0b797cb.up.railway.app"
     // beforeFiles: these run before this site's own routing, so the map's
