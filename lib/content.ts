@@ -280,7 +280,7 @@ export function getDefaultContent(): SiteContent {
           photo: "/images/team/elizabeth.jpg",
           photoPosition: "object-[center_20%]",
           link: "",
-          bio: "Elizabeth Evans is an experienced litigator admitted to the New York Bar with a background in nonprofit fundraising. She served as Counsel at O'Melveny & Myers LLP and previously clerked for a U.S. District Judge. Elizabeth also served as Senior Development Coordinator at the American Museum of Natural History. She earned her J.D. from Fordham University School of Law.",
+          bio: "Elizabeth Evans is a Capital Projects Fellow at New City Parks. She is an experienced litigator admitted to the New York Bar with a background in nonprofit fundraising. She previously served as Counsel at O'Melveny & Myers LLP and clerked for a U.S. District Judge. Elizabeth also served as Senior Development Coordinator at the American Museum of Natural History. She earned her J.D. from Fordham University School of Law.",
         },
         {
           name: "Lindsey Andersen",
