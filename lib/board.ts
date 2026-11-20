@@ -19,9 +19,11 @@ export const listedBoardMembers: ListedBoardMember[] = [
 // Board members who have a photo card in the team grid (their entries are in
 // lib/content.ts, where their role is "Board of Directors"). Under the "Board
 // of Directors" heading the card shows the person's current job title in
-// place of that role (Julia, Nov 19 2026). Keyed by the name on the card.
+// place of that role (Julia, Nov 19 2026). Organizations are written out in
+// full, never as acronyms (Julia, same day). Keyed by the name on the card.
 export const boardCardTitles: Record<string, string> = {
-  "Marlena Wisniak": "Head of Digital at ECNL",
+  "Marlena Wisniak":
+    "Head of Digital at the European Center for Not-for-Profit Law",
   "Elizabeth Evans": "Capital Projects Fellow at New City Parks",
-  "Lindsey Andersen": "Director at BSR",
+  "Lindsey Andersen": "Director at Business for Social Responsibility",
 };

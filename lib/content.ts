@@ -262,7 +262,7 @@ export function getDefaultContent(): SiteContent {
           photo: "/images/team/lindsey.jpg",
           photoPosition: "object-[center_20%]",
           link: "",
-          bio: "Lindsey Andersen advises companies on the responsible development and deployment of technology as a Director at BSR. She has a background in international human rights, with a focus on digital rights and digital security, and previously worked on these issues at Internews and Access Now. Lindsey has a Masters in public policy from Princeton University.",
+          bio: "Lindsey Andersen advises companies on the responsible development and deployment of technology as a Director at Business for Social Responsibility. She has a background in international human rights, with a focus on digital rights and digital security, and previously worked on these issues at Internews and Access Now. Lindsey has a Masters in public policy from Princeton University.",
         },
       ],
     },
