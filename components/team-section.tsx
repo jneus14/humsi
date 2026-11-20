@@ -144,9 +144,9 @@ export function TeamSection({ content }: TeamSectionProps) {
         {listedBoardMembers.length > 0 && (
           <div className="mt-12 mx-auto max-w-3xl border-t border-border pt-8 text-center">
             <p className="text-sm font-medium uppercase tracking-[0.15em] text-muted-foreground">
-              Also on the Board of Directors
+              Board of Directors
             </p>
-            <ul className="mt-5 grid gap-5 sm:grid-cols-2">
+            <ul className="mt-5 space-y-5">
               {listedBoardMembers.map((member) => (
                 <li key={member.name}>
                   <p className="text-lg font-semibold text-foreground">
