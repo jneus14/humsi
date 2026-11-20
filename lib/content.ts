@@ -1,5 +1,3 @@
-import { put, get } from "@vercel/blob";
-
 export interface HeroContent {
   tagline: string;
   title: string;
@@ -74,33 +72,8 @@ export interface SiteContent {
   contact: ContactContent;
 }
 
-const CONTENT_PATH = "site-content.json";
-
-export async function getContent(): Promise<SiteContent> {
-  try {
-    const result = await get(CONTENT_PATH, { access: "private" });
-    
-    if (result && result.stream) {
-      const text = await new Response(result.stream).text();
-      return JSON.parse(text);
-    }
-  } catch (error) {
-    // File doesn't exist yet, return defaults
-    console.log("No saved content found, using defaults");
-  }
-  
-  return getDefaultContent();
-}
-
-export async function saveContent(content: SiteContent): Promise<void> {
-  await put(CONTENT_PATH, JSON.stringify(content, null, 2), {
-    access: "private",
-    contentType: "application/json",
-    addRandomSuffix: false,
-    allowOverwrite: true,
-  });
-}
-
+// The site's text lives in this file. (Until Nov 2026 two unused functions
+// here could read and write it in Vercel Blob; no page ever called them.)
 export function getDefaultContent(): SiteContent {
   return {
     hero: {
