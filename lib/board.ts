@@ -11,19 +11,21 @@ export const listedBoardMembers: ListedBoardMember[] = [
   {
     name: "Ahmed Gaya",
     title:
-      "Director, Climate Justice Collaborative at National Partnership for New Americans",
+      "Director, Climate Justice Collaborative, National Partnership for New Americans",
   },
-  { name: "Jaryd Saevitzon", title: "Software Engineer at Uber" },
+  { name: "Jaryd Saevitzon", title: "Software Engineer, Uber" },
 ];
 
 // Board members who have a photo card in the team grid (their entries are in
 // lib/content.ts, where their role is "Board of Directors"). Under the "Board
 // of Directors" heading the card shows the person's current job title in
 // place of that role (Julia, Nov 19 2026). Organizations are written out in
-// full, never as acronyms (Julia, same day). Keyed by the name on the card.
+// full, never as acronyms, and every title on this page is written
+// "Title, Organization" with a comma, never "at" (Julia, same day). Keyed by
+// the name on the card.
 export const boardCardTitles: Record<string, string> = {
   "Marlena Wisniak":
-    "Head of Digital at the European Center for Not-for-Profit Law",
-  "Elizabeth Evans": "Capital Projects Fellow at New City Parks",
-  "Lindsey Andersen": "Director at Business for Social Responsibility",
+    "Head of Digital, European Center for Not-for-Profit Law",
+  "Elizabeth Evans": "Capital Projects Fellow, New City Parks",
+  "Lindsey Andersen": "Director, Business for Social Responsibility",
 };
