@@ -1,9 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
 
 const inter = Inter({ subsets: ["latin"] });
+
+// Visitor counts go to HUMSI's own Umami (the one hiproject.org uses, on
+// Railway). Both values are set on the Railway service; with no website id
+// (local runs) no script is added.
+const umamiUrl = process.env.NEXT_PUBLIC_UMAMI_URL
+const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
 
 export const metadata: Metadata = {
   title: 'Human Security Initiative',
@@ -36,7 +42,14 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} font-sans antialiased`}>
         {children}
-        <Analytics />
+        {umamiUrl && umamiWebsiteId && (
+          <Script
+            src={`${umamiUrl}/script.js`}
+            data-website-id={umamiWebsiteId}
+            data-domains="humsi.org,www.humsi.org"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   )

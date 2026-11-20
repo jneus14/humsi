@@ -7,8 +7,6 @@ import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
 import { getDefaultContent } from "@/lib/content"
 
-export const dynamic = "force-dynamic"
-
 export default async function Home() {
   const content = getDefaultContent()
 
