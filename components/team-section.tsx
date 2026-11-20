@@ -40,10 +40,12 @@ function TeamCard({ member }: { member: TeamMember }) {
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-4 text-left">
-            <h3 className="text-lg font-semibold text-primary-foreground">
+            {/* Smaller on phones, where a card is narrow and a long job
+                title would otherwise climb over the face. */}
+            <h3 className="text-base leading-tight font-semibold text-primary-foreground sm:text-lg">
               {member.name}
             </h3>
-            <p className="text-sm text-primary-foreground/80">{subtitle}</p>
+            <p className="mt-0.5 text-xs leading-snug text-primary-foreground/80 sm:text-sm">{subtitle}</p>
           </div>
         </div>
       </button>
