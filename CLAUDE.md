@@ -18,7 +18,7 @@ The site runs on Railway as the service `humsi-site` in the project `uscd` (the 
 - The site's text is in `lib/content.ts` and the page files; images are in `public/images/`. There is no editor on the site: text is changed in the code.
 - `/uscd` and everything under it is passed to the climate map (`next.config.mjs`). `USCD_ORIGIN` on the Railway service holds the map's private address; it is read when the site is built, so changing it needs a redeploy. Without it (a local run) the map's public Railway address is used.
 - `/cdadmin` redirects to `/uscd/admin`.
-- Visitor counts go to HUMSI's Umami (service `umami` in the hiproject.org Railway project): `NEXT_PUBLIC_UMAMI_URL` and `NEXT_PUBLIC_UMAMI_WEBSITE_ID` on the Railway service, also read at build time. A local run has neither and loads no script.
+- Visitor counts go to HUMSI's Umami (service `umami` in the hiproject.org Railway project; this site is the website named `humsi` there). Its address and website id are in `app/layout.tsx`; the script only counts visits on humsi.org and www.humsi.org.
 - The service's own `….up.railway.app` address shows the same pages and is marked noindex.
 - Never put a password or key in the code; variables live in the Railway dashboard.
 

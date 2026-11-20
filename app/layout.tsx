@@ -6,10 +6,11 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"] });
 
 // Visitor counts go to HUMSI's own Umami (the one hiproject.org uses, on
-// Railway). Both values are set on the Railway service; with no website id
-// (local runs) no script is added.
-const umamiUrl = process.env.NEXT_PUBLIC_UMAMI_URL
-const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID
+// Railway). Neither value is a secret: both are in every page a visitor
+// loads. The script only counts visits to humsi.org itself (data-domains
+// below), so local runs and the Railway address are left out.
+const umamiUrl = process.env.NEXT_PUBLIC_UMAMI_URL || "https://umami-production-e2a8.up.railway.app"
+const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || "4a231d16-49f1-45a6-a407-54d558471c1a"
 
 export const metadata: Metadata = {
   title: 'Human Security Initiative',
