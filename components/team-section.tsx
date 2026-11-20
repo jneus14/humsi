@@ -122,7 +122,15 @@ function TeamCard({ member }: { member: TeamMember }) {
   )
 }
 
+// A team member whose role says "Board" belongs under the Board of Directors
+// heading; everyone else is staff and comes first (Julia, Nov 19 2026).
+const onBoard = (member: TeamMember) => /board/i.test(member.role)
+
 export function TeamSection({ content }: TeamSectionProps) {
+  const staff = content.members.filter((member) => !onBoard(member))
+  const board = content.members.filter(onBoard)
+  const hasBoard = board.length > 0 || listedBoardMembers.length > 0
+
   return (
     <section id="team" className="py-24 md:py-32">
       <div className="mx-auto max-w-6xl px-6">
@@ -136,30 +144,41 @@ export function TeamSection({ content }: TeamSectionProps) {
         </div>
 
         <div className="mt-14 mx-auto max-w-3xl grid gap-6 grid-cols-2 md:grid-cols-3">
-          {content.members.map((member) => (
+          {staff.map((member) => (
             <TeamCard key={member.name} member={member} />
           ))}
         </div>
 
-        {listedBoardMembers.length > 0 && (
-          <div className="mt-12 mx-auto max-w-3xl border-t border-border pt-8 text-center">
-            <p className="text-sm font-medium uppercase tracking-[0.15em] text-muted-foreground">
+        {hasBoard && (
+          <div className="mt-12 mx-auto max-w-3xl border-t border-border pt-8">
+            {/* The heading, then the board members with photo cards, then the
+                board members listed by name and job title (lib/board.ts). */}
+            <h3 className="text-center text-sm font-medium uppercase tracking-[0.15em] text-muted-foreground">
               Board of Directors
-            </p>
-            <ul className="mt-5 space-y-5">
-              {listedBoardMembers.map((member) => (
-                <li key={member.name}>
-                  <p className="text-lg font-semibold text-foreground">
-                    {member.name}
-                  </p>
-                  {member.title && (
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">
-                      {member.title}
+            </h3>
+            {board.length > 0 && (
+              <div className="mt-8 grid gap-6 grid-cols-2 md:grid-cols-3">
+                {board.map((member) => (
+                  <TeamCard key={member.name} member={member} />
+                ))}
+              </div>
+            )}
+            {listedBoardMembers.length > 0 && (
+              <ul className="mt-10 space-y-5 text-center">
+                {listedBoardMembers.map((member) => (
+                  <li key={member.name}>
+                    <p className="text-lg font-semibold text-foreground">
+                      {member.name}
                     </p>
-                  )}
-                </li>
-              ))}
-            </ul>
+                    {member.title && (
+                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">
+                        {member.title}
+                      </p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         )}
       </div>
