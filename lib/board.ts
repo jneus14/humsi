@@ -11,7 +11,7 @@ export const listedBoardMembers: ListedBoardMember[] = [
   {
     name: "Ahmed Gaya",
     title:
-      "Director of the Climate Justice Collaborative at the National Partnership for New Americans",
+      "Director, Climate Justice Collaborative at National Partnership for New Americans",
   },
   { name: "Jaryd Saevitzon", title: "Software Engineer at Uber" },
 ];
