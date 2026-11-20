@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { FileText, Mail, X } from "lucide-react"
 import type { TeamContent, TeamMember } from "@/lib/content"
+import { listedBoardMembers } from "@/lib/board"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -139,6 +140,28 @@ export function TeamSection({ content }: TeamSectionProps) {
             <TeamCard key={member.name} member={member} />
           ))}
         </div>
+
+        {listedBoardMembers.length > 0 && (
+          <div className="mt-12 mx-auto max-w-3xl border-t border-border pt-8 text-center">
+            <p className="text-sm font-medium uppercase tracking-[0.15em] text-muted-foreground">
+              Also on the Board of Directors
+            </p>
+            <ul className="mt-5 grid gap-5 sm:grid-cols-2">
+              {listedBoardMembers.map((member) => (
+                <li key={member.name}>
+                  <p className="text-lg font-semibold text-foreground">
+                    {member.name}
+                  </p>
+                  {member.title && (
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground text-balance">
+                      {member.title}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </section>
   )
