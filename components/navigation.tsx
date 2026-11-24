@@ -21,7 +21,7 @@ export function Navigation() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center">
           <img
-            src="/images/logo-dark-header.png"
+            src="/images/logo-dark-header-2.png"
             alt="HUMSI - Human Security Initiative"
             className="h-10 w-auto"
             loading="eager"

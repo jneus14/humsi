@@ -6,7 +6,7 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 text-center md:flex-row md:justify-between md:text-left">
         <div className="flex flex-col items-center md:items-start gap-4">
           <Image
-            src="/images/logo-dark.png"
+            src="/images/logo-dark-2.png"
             alt="HUMSI - Human Security Initiative"
             width={1886}
             height={693}
