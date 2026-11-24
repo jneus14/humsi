@@ -19,9 +19,9 @@ export function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center rounded-lg bg-[#f5f3f1] p-2">
+        <Link href="/" className="flex items-center">
           <img
-            src="/images/logo.png"
+            src="/images/logo-dark-header.png"
             alt="HUMSI - Human Security Initiative"
             className="h-10 w-auto"
             loading="eager"

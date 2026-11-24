@@ -5,15 +5,14 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-card py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 text-center md:flex-row md:justify-between md:text-left">
         <div className="flex flex-col items-center md:items-start gap-4">
-          <div className="rounded-lg bg-[#f5f3f1] px-4 py-3">
-            <Image
-              src="/images/logo.png"
-              alt="HUMSI - Human Security Initiative"
-              width={220}
-              height={55}
-              className="h-14 w-auto"
-            />
-          </div>
+          <Image
+            src="/images/logo-dark.png"
+            alt="HUMSI - Human Security Initiative"
+            width={1886}
+            height={693}
+            sizes="160px"
+            className="h-14 w-auto"
+          />
           <p className="max-w-xs text-sm text-muted-foreground">
             Human Security Initiative is a 501(c)(3) nonprofit organization
             incorporated in California and based in Oakland, CA.
