@@ -90,7 +90,7 @@ export function getDefaultContent(): SiteContent {
       title: "Our Mission",
       subtitle: "Research, Advocacy, Education",
       description:
-        "The Human Security Initiative (HUMSI) is a 501(c)(3) nonprofit organization that works for the safety and dignity of all people. Human security means freedom from fear, freedom from want and the freedom to live in dignity. HUMSI works for these freedoms for people who are often left unprotected, including migrants and asylum seekers, people detained or deported, and people forced from their homes by violence, persecution or disaster. We research and document the harm they face, in their own words wherever we can, and use that evidence in advocacy, legal work and education for protection and accountability.",
+        "Human Security Initiative (HUMSI) is a 501(c)(3) nonprofit organization that works for the safety and dignity of all people. Human security means freedom from fear, freedom from want and the freedom to live in dignity. HUMSI works for these freedoms for people who are often left unprotected, including migrants and asylum seekers, people detained or deported, and people forced from their homes by violence, persecution or disaster. We research and document the harm they face, in their own words wherever we can, and use that evidence in advocacy, legal work and education for protection and accountability.",
       pillars: [
         {
           title: "Research",
