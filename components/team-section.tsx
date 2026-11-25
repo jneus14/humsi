@@ -75,7 +75,7 @@ function TeamCard({ member }: { member: TeamMember }) {
                     src={member.photo}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className={`object-cover ${member.avatarPosition ?? ""}`}
                   />
                 </div>
               ) : (

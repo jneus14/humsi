@@ -7,14 +7,7 @@ export interface ListedBoardMember {
   title?: string;
 }
 
-export const listedBoardMembers: ListedBoardMember[] = [
-  {
-    name: "Ahmed Gaya",
-    title:
-      "Director, Climate Justice Collaborative, National Partnership for New Americans",
-  },
-  { name: "Jaryd Saevitzon", title: "Software Engineer, Uber" },
-];
+export const listedBoardMembers: ListedBoardMember[] = [];
 
 // Board members who have a photo card in the team grid (their entries are in
 // lib/content.ts, where their role is "Board of Directors"). Under the "Board
@@ -28,4 +21,7 @@ export const boardCardTitles: Record<string, string> = {
     "Head of Digital, European Center for Not-for-Profit Law",
   "Elizabeth Evans": "Capital Projects Fellow, New City Parks",
   "Lindsey Andersen": "Director, Business for Social Responsibility",
+  "Ahmed Gaya":
+    "Director, Climate Justice Collaborative, National Partnership for New Americans",
+  "Jaryd Saevitzon": "Staff Software Engineer, Uber",
 };

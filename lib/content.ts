@@ -41,6 +41,9 @@ export interface TeamMember {
   initials: string;
   photo?: string;
   photoPosition?: string;
+  // Crop of the round photo in the bio popup, when the default (centered,
+  // whole width) leaves the face small or off center.
+  avatarPosition?: string;
   link: string;
   bio: string;
   email?: string;
@@ -263,6 +266,26 @@ export function getDefaultContent(): SiteContent {
           photoPosition: "object-[center_20%]",
           link: "",
           bio: "Lindsey Andersen advises companies on the responsible development and deployment of technology as a Director at Business for Social Responsibility. She has a background in international human rights, with a focus on digital rights and digital security, and previously worked on these issues at Internews and Access Now. Lindsey has a Masters in public policy from Princeton University.",
+        },
+        {
+          name: "Ahmed Gaya",
+          role: "Board of Directors",
+          initials: "AG",
+          photo: "/images/team/ahmed.jpg",
+          photoPosition: "object-[center_20%]",
+          avatarPosition: "object-[center_0%] scale-[1.35] origin-[65%_4%]",
+          link: "",
+          bio: "Ahmed Gaya directs the Climate Justice Collaborative at the National Partnership for New Americans, a national coalition of immigrant and refugee rights organizations, where he brings the immigrant rights movement into the fight for climate justice and supports leaders displaced by climate change. He has organized in the climate movement for more than twenty years. Prior to founding NPNA's Climate Justice Collaborative, Ahmed helped popularize the concept of the Green New Deal as the Organizing Director for the Sunrise Movement. His family came to the United States from Pakistan.",
+        },
+        {
+          name: "Jaryd Saevitzon",
+          role: "Board of Directors",
+          initials: "JS",
+          photo: "/images/team/jaryd.jpg",
+          photoPosition: "object-[center_20%]",
+          avatarPosition: "object-[center_0%] scale-[1.3] origin-[50%_40%]",
+          link: "",
+          bio: "Jaryd Saevitzon is a Staff Software Engineer at Uber, where he has worked since 2021. He previously built software at Splunk and at Amazon Web Services. Jaryd graduated from UCLA with a bachelor's degree in Mathematics of Computation, focused on applied mathematics and its uses in computer science.",
         },
       ],
     },
