@@ -20,9 +20,6 @@ export function HeroSection({ content }: HeroSectionProps) {
 
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-20 pt-40">
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-accent/80">
-          {content.tagline}
-        </p>
         <h1 className="max-w-3xl bg-gradient-to-r from-white via-[#f6e8c4] to-accent bg-clip-text text-4xl font-extrabold leading-tight tracking-tight text-transparent md:text-6xl lg:text-7xl text-balance">
           {content.title}
         </h1>
