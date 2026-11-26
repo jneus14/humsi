@@ -210,7 +210,7 @@ export function getDefaultContent(): SiteContent {
       members: [
         {
           name: "Julia Neusner",
-          role: "Executive Director",
+          role: "Founder & Executive Director",
           initials: "JN",
           photo: "/images/team/julia.jpg",
           photoPosition: "object-[center_20%]",
